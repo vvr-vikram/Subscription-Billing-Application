@@ -1,0 +1,1313 @@
+2026-05-08T09:55:58.152+05:30  INFO 24224 --- [Subscription Billing System] [main] c.b.s.SubscriptionBillingApplication     : Starting SubscriptionBillingApplication using Java 17.0.12 with PID 24224 (C:\Users\vikra.VIGNESHXBS-HP\eclipse-workspace\subscription-billing-system\target\classes started by vikra in C:\Users\vikra.VIGNESHXBS-HP\eclipse-workspace\subscription-billing-system)
+2026-05-08T09:55:58.180+05:30 DEBUG 24224 --- [Subscription Billing System] [main] c.b.s.SubscriptionBillingApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-08T09:55:58.190+05:30  INFO 24224 --- [Subscription Billing System] [main] c.b.s.SubscriptionBillingApplication     : The following 1 profile is active: "dev"
+2026-05-08T09:56:01.809+05:30  INFO 24224 --- [Subscription Billing System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-08T09:56:02.056+05:30  INFO 24224 --- [Subscription Billing System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 224 ms. Found 5 JPA repository interfaces.
+2026-05-08T09:56:03.978+05:30  INFO 24224 --- [Subscription Billing System] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-08T09:56:04.015+05:30  INFO 24224 --- [Subscription Billing System] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-08T09:56:04.016+05:30  INFO 24224 --- [Subscription Billing System] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-05-08T09:56:04.220+05:30  INFO 24224 --- [Subscription Billing System] [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2026-05-08T09:56:04.226+05:30  INFO 24224 --- [Subscription Billing System] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 5307 ms
+2026-05-08T09:56:04.467+05:30  INFO 24224 --- [Subscription Billing System] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-08T09:56:04.954+05:30  INFO 24224 --- [Subscription Billing System] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@329dc214
+2026-05-08T09:56:04.960+05:30  INFO 24224 --- [Subscription Billing System] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-08T09:56:05.167+05:30  INFO 24224 --- [Subscription Billing System] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-08T09:56:05.327+05:30  INFO 24224 --- [Subscription Billing System] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-05-08T09:56:05.432+05:30  INFO 24224 --- [Subscription Billing System] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-08T09:56:06.095+05:30  INFO 24224 --- [Subscription Billing System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-08T09:56:06.284+05:30  WARN 24224 --- [Subscription Billing System] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-08T09:56:06.287+05:30  WARN 24224 --- [Subscription Billing System] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-08T09:56:08.242+05:30  INFO 24224 --- [Subscription Billing System] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-08T09:56:08.481+05:30  INFO 24224 --- [Subscription Billing System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-08T09:56:09.438+05:30  INFO 24224 --- [Subscription Billing System] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-08T09:56:11.479+05:30  WARN 24224 --- [Subscription Billing System] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-08T09:56:14.911+05:30  WARN 24224 --- [Subscription Billing System] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 51c0d9ee-b2c6-4218-9f51-d698cfa8f395
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-08T09:56:15.254+05:30  INFO 24224 --- [Subscription Billing System] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22265a8d, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@492939b, org.springframework.security.web.context.SecurityContextHolderFilter@462ccaa8, org.springframework.security.web.header.HeaderWriterFilter@511936ad, org.springframework.web.filter.CorsFilter@ad7d724, org.springframework.security.web.csrf.CsrfFilter@42b2319c, org.springframework.security.web.authentication.logout.LogoutFilter@7c8c2d03, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5b84007e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@58ef1543, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@e8acdfc, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@772a370d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6fbfd6ed, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@191a3448, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1e680c92, org.springframework.security.web.access.ExceptionTranslationFilter@3532b5d9, org.springframework.security.web.access.intercept.AuthorizationFilter@24cf1abf]
+2026-05-08T09:56:15.453+05:30  INFO 24224 --- [Subscription Billing System] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2026-05-08T09:56:15.496+05:30  INFO 24224 --- [Subscription Billing System] [main] c.b.s.SubscriptionBillingApplication     : Started SubscriptionBillingApplication in 18.271 seconds (process running for 19.717)
+2026-05-08T09:59:43.861+05:30  INFO 24224 --- [Subscription Billing System] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08T09:59:43.864+05:30  INFO 24224 --- [Subscription Billing System] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-08T09:59:43.879+05:30  INFO 24224 --- [Subscription Billing System] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
+2026-05-08T09:59:43.941+05:30  WARN 24224 --- [Subscription Billing System] [http-nio-8080-exec-2] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/v1/users' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-05-08T09:59:46.360+05:30  WARN 24224 --- [Subscription Billing System] [http-nio-8080-exec-2] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [223] milliseconds.
+2026-05-08T10:06:36.035+05:30  WARN 24224 --- [Subscription Billing System] [http-nio-8080-exec-4] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-05-08T10:06:52.251+05:30  WARN 24224 --- [Subscription Billing System] [http-nio-8080-exec-5] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-05-08T10:07:39.832+05:30  WARN 24224 --- [Subscription Billing System] [http-nio-8080-exec-6] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-05-08T10:09:10.749+05:30  WARN 24224 --- [Subscription Billing System] [http-nio-8080-exec-9] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-05-08T10:11:00.666+05:30  WARN 24224 --- [Subscription Billing System] [http-nio-8080-exec-2] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-05-08T10:11:12.676+05:30  WARN 24224 --- [Subscription Billing System] [http-nio-8080-exec-3] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-05-08T10:12:02.088+05:30  INFO 17104 --- [Subscription Billing System] [main] c.b.s.SubscriptionBillingApplication     : Starting SubscriptionBillingApplication using Java 17.0.12 with PID 17104 (C:\Users\vikra.VIGNESHXBS-HP\eclipse-workspace\subscription-billing-system\target\classes started by vikra in C:\Users\vikra.VIGNESHXBS-HP\eclipse-workspace\subscription-billing-system)
+2026-05-08T10:12:02.092+05:30 DEBUG 17104 --- [Subscription Billing System] [main] c.b.s.SubscriptionBillingApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-08T10:12:02.096+05:30  INFO 17104 --- [Subscription Billing System] [main] c.b.s.SubscriptionBillingApplication     : The following 1 profile is active: "dev"
+2026-05-08T10:12:04.121+05:30  INFO 17104 --- [Subscription Billing System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-08T10:12:04.261+05:30  INFO 17104 --- [Subscription Billing System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 120 ms. Found 5 JPA repository interfaces.
+2026-05-08T10:12:05.531+05:30  INFO 17104 --- [Subscription Billing System] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-08T10:12:05.552+05:30  INFO 17104 --- [Subscription Billing System] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-08T10:12:05.553+05:30  INFO 17104 --- [Subscription Billing System] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-05-08T10:12:05.720+05:30  INFO 17104 --- [Subscription Billing System] [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2026-05-08T10:12:05.722+05:30  INFO 17104 --- [Subscription Billing System] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3513 ms
+2026-05-08T10:12:06.042+05:30  INFO 17104 --- [Subscription Billing System] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-08T10:12:07.013+05:30  INFO 17104 --- [Subscription Billing System] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4f081b5d
+2026-05-08T10:12:07.050+05:30  INFO 17104 --- [Subscription Billing System] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-08T10:12:07.574+05:30  INFO 17104 --- [Subscription Billing System] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-08T10:12:07.914+05:30  INFO 17104 --- [Subscription Billing System] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-05-08T10:12:08.029+05:30  INFO 17104 --- [Subscription Billing System] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-08T10:12:08.627+05:30  INFO 17104 --- [Subscription Billing System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-08T10:12:08.946+05:30  WARN 17104 --- [Subscription Billing System] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-08T10:12:08.949+05:30  WARN 17104 --- [Subscription Billing System] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-08T10:12:11.183+05:30  INFO 17104 --- [Subscription Billing System] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-08T10:12:11.339+05:30  INFO 17104 --- [Subscription Billing System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-08T10:12:12.081+05:30  INFO 17104 --- [Subscription Billing System] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-08T10:12:13.730+05:30  WARN 17104 --- [Subscription Billing System] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-08T10:12:16.320+05:30  WARN 17104 --- [Subscription Billing System] [main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: ef315792-f42c-49cf-aa4c-d4746a9a8b24
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-05-08T10:12:16.557+05:30  INFO 17104 --- [Subscription Billing System] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@46672a62, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c91ced9, org.springframework.security.web.context.SecurityContextHolderFilter@3aa2646f, org.springframework.security.web.header.HeaderWriterFilter@105f875f, org.springframework.web.filter.CorsFilter@46e03c31, org.springframework.security.web.csrf.CsrfFilter@62db3787, org.springframework.security.web.authentication.logout.LogoutFilter@7af45006, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@7ef9c234, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5ea206bc, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@24cf1abf, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@579e8a7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@136dc575, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a1b51a7, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5b84007e, org.springframework.security.web.access.ExceptionTranslationFilter@42b2319c, org.springframework.security.web.access.intercept.AuthorizationFilter@184d73af]
+2026-05-08T10:12:16.674+05:30  INFO 17104 --- [Subscription Billing System] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2026-05-08T10:12:16.697+05:30  INFO 17104 --- [Subscription Billing System] [main] c.b.s.SubscriptionBillingApplication     : Started SubscriptionBillingApplication in 15.363 seconds (process running for 16.428)
+2026-05-08T10:13:11.562+05:30  INFO 17104 --- [Subscription Billing System] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08T10:13:11.566+05:30  INFO 17104 --- [Subscription Billing System] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-08T10:13:11.573+05:30  INFO 17104 --- [Subscription Billing System] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2026-05-08T10:13:11.612+05:30  WARN 17104 --- [Subscription Billing System] [http-nio-8080-exec-2] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/v1/users' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-05-08T10:13:12.238+05:30  WARN 17104 --- [Subscription Billing System] [http-nio-8080-exec-2] o.s.s.c.bcrypt.BCryptPasswordEncoder     : Encoded password does not look like BCrypt
+2026-05-08T10:18:11.304+05:30  INFO 22052 --- [Subscription Billing System] [main] c.b.s.SubscriptionBillingApplication     : Starting SubscriptionBillingApplication using Java 17.0.12 with PID 22052 (C:\Users\vikra.VIGNESHXBS-HP\eclipse-workspace\subscription-billing-system\target\classes started by vikra in C:\Users\vikra.VIGNESHXBS-HP\eclipse-workspace\subscription-billing-system)
+2026-05-08T10:18:11.313+05:30 DEBUG 22052 --- [Subscription Billing System] [main] c.b.s.SubscriptionBillingApplication     : Running with Spring Boot v3.2.0, Spring v6.1.1
+2026-05-08T10:18:11.319+05:30  INFO 22052 --- [Subscription Billing System] [main] c.b.s.SubscriptionBillingApplication     : The following 1 profile is active: "dev"
+2026-05-08T10:18:13.541+05:30  INFO 22052 --- [Subscription Billing System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-05-08T10:18:13.717+05:30  INFO 22052 --- [Subscription Billing System] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 151 ms. Found 5 JPA repository interfaces.
+2026-05-08T10:18:15.015+05:30  INFO 22052 --- [Subscription Billing System] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-05-08T10:18:15.036+05:30  INFO 22052 --- [Subscription Billing System] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-05-08T10:18:15.037+05:30  INFO 22052 --- [Subscription Billing System] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.16]
+2026-05-08T10:18:15.198+05:30  INFO 22052 --- [Subscription Billing System] [main] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring embedded WebApplicationContext
+2026-05-08T10:18:15.201+05:30  INFO 22052 --- [Subscription Billing System] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3753 ms
+2026-05-08T10:18:15.403+05:30  INFO 22052 --- [Subscription Billing System] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-05-08T10:18:15.736+05:30  INFO 22052 --- [Subscription Billing System] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@51ff3c4b
+2026-05-08T10:18:15.750+05:30  INFO 22052 --- [Subscription Billing System] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-05-08T10:18:15.973+05:30  INFO 22052 --- [Subscription Billing System] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-05-08T10:18:16.109+05:30  INFO 22052 --- [Subscription Billing System] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.3.1.Final
+2026-05-08T10:18:16.255+05:30  INFO 22052 --- [Subscription Billing System] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-05-08T10:18:16.755+05:30  INFO 22052 --- [Subscription Billing System] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-05-08T10:18:16.890+05:30  WARN 22052 --- [Subscription Billing System] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-05-08T10:18:16.894+05:30  WARN 22052 --- [Subscription Billing System] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-05-08T10:18:18.528+05:30  INFO 22052 --- [Subscription Billing System] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-05-08T10:18:18.667+05:30  INFO 22052 --- [Subscription Billing System] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-05-08T10:18:19.421+05:30  INFO 22052 --- [Subscription Billing System] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-05-08T10:18:20.971+05:30  WARN 22052 --- [Subscription Billing System] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-05-08T10:18:23.932+05:30  INFO 22052 --- [Subscription Billing System] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c5fbe8a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@76c6b12c, org.springframework.security.web.context.SecurityContextHolderFilter@2ecb7f0c, org.springframework.security.web.header.HeaderWriterFilter@33116b8e, org.springframework.web.filter.CorsFilter@79a7f553, org.springframework.security.web.authentication.logout.LogoutFilter@7e130e34, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4d8af13c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3e51beda, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51bab787, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2a85e4f4, org.springframework.security.web.access.ExceptionTranslationFilter@1132c14, org.springframework.security.web.access.intercept.AuthorizationFilter@65cd37bb]
+2026-05-08T10:18:24.657+05:30  INFO 22052 --- [Subscription Billing System] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/api'
+2026-05-08T10:18:24.680+05:30  INFO 22052 --- [Subscription Billing System] [main] c.b.s.SubscriptionBillingApplication     : Started SubscriptionBillingApplication in 14.199 seconds (process running for 15.139)
+2026-05-08T10:20:07.946+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/api]    : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-05-08T10:20:07.952+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-05-08T10:20:07.965+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2026-05-08T10:20:08.024+05:30  WARN 22052 --- [Subscription Billing System] [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/v1/users' (previous null). Performing CorsConfiguration lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-05-08T10:20:08.919+05:30  WARN 22052 --- [Subscription Billing System] [http-nio-8080-exec-1] o.s.w.s.h.HandlerMappingIntrospector     : Cache miss for REQUEST dispatch to '/api/v1/users' (previous null). Performing MatchableHandlerMapping lookup. This is logged once only at WARN level, and every time at TRACE.
+2026-05-08T10:20:09.202+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-1] c.b.subscription.service.UserService     : Fetching all users
+2026-05-08T10:20:09.429+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.description,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    order by
+        u1_0.id desc 
+    limit
+        ?, ?
+2026-05-08T10:20:39.336+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] c.b.subscription.service.UserService     : Creating new user with email: vikram@example.com
+2026-05-08T10:20:39.389+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    limit
+        ?
+2026-05-08T10:20:39.398+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    limit
+        ?
+2026-05-08T10:20:39.831+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.User */insert 
+    into
+        users (active, created_at, created_by, description, email, first_name, last_name, password, phone_number, role, status, updated_at, updated_by, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T10:20:39.883+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] c.b.subscription.service.UserService     : User created successfully with ID: 1
+2026-05-08T10:20:39.895+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.AuditLog */insert 
+    into
+        audit_logs (action, created_at, details, entity_id, entity_type, ip_address, new_values, old_values, performed_by) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T10:20:39.960+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] c.b.subscription.service.AuditService    : Audit log created for User ID: 1 - Action: CREATE
+2026-05-08T10:25:49.388+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] c.b.subscription.service.UserService     : Creating new user with email: magesh@example.com
+2026-05-08T10:25:49.394+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    limit
+        ?
+2026-05-08T10:25:49.399+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    limit
+        ?
+2026-05-08T10:25:49.763+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.User */insert 
+    into
+        users (active, created_at, created_by, description, email, first_name, last_name, password, phone_number, role, status, updated_at, updated_by, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T10:25:49.771+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] c.b.subscription.service.UserService     : User created successfully with ID: 2
+2026-05-08T10:25:49.772+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.AuditLog */insert 
+    into
+        audit_logs (action, created_at, details, entity_id, entity_type, ip_address, new_values, old_values, performed_by) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T10:25:49.778+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] c.b.subscription.service.AuditService    : Audit log created for User ID: 2 - Action: CREATE
+2026-05-08T10:26:47.072+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-8] c.b.subscription.service.UserService     : Fetching user with ID: 2
+2026-05-08T10:26:47.102+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.description,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-05-08T10:27:54.137+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-2] c.b.subscription.service.UserService     : Creating new user with email: bala@example.com
+2026-05-08T10:27:54.140+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.username=? 
+    limit
+        ?
+2026-05-08T10:27:54.143+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id 
+    from
+        users u1_0 
+    where
+        u1_0.email=? 
+    limit
+        ?
+2026-05-08T10:27:54.514+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.User */insert 
+    into
+        users (active, created_at, created_by, description, email, first_name, last_name, password, phone_number, role, status, updated_at, updated_by, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T10:27:54.521+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-2] c.b.subscription.service.UserService     : User created successfully with ID: 3
+2026-05-08T10:27:54.523+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.AuditLog */insert 
+    into
+        audit_logs (action, created_at, details, entity_id, entity_type, ip_address, new_values, old_values, performed_by) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T10:27:54.526+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-2] c.b.subscription.service.AuditService    : Audit log created for User ID: 3 - Action: CREATE
+2026-05-08T10:29:07.147+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] c.b.subscription.service.UserService     : Fetching user with username: Bala.b99
+2026-05-08T10:29:07.153+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.description,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2026-05-08T10:30:31.123+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-6] c.b.subscription.service.UserService     : Fetching all users
+2026-05-08T10:30:31.126+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.description,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    order by
+        u1_0.id desc 
+    limit
+        ?, ?
+2026-05-08T10:31:31.981+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-9] c.b.subscription.service.UserService     : Searching users with keyword: john
+2026-05-08T10:31:32.022+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    /* SELECT
+        u 
+    FROM
+        User u 
+    WHERE
+        LOWER(u.username) LIKE LOWER(CONCAT('%', :search, '%')) 
+        OR LOWER(u.email) LIKE LOWER(CONCAT('%', :search, '%')) 
+        OR LOWER(u.firstName) LIKE LOWER(CONCAT('%', :search, '%')) 
+        OR LOWER(u.lastName) LIKE LOWER(CONCAT('%', :search, '%')) */ select
+            u1_0.id,
+            u1_0.active,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.description,
+            u1_0.email,
+            u1_0.first_name,
+            u1_0.last_name,
+            u1_0.password,
+            u1_0.phone_number,
+            u1_0.role,
+            u1_0.status,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            lower(u1_0.username) like replace(lower(concat('%', ?, '%')), '\\', '\\\\') 
+            or lower(u1_0.email) like replace(lower(concat('%', ?, '%')), '\\', '\\\\') 
+            or lower(u1_0.first_name) like replace(lower(concat('%', ?, '%')), '\\', '\\\\') 
+            or lower(u1_0.last_name) like replace(lower(concat('%', ?, '%')), '\\', '\\\\') 
+        limit
+            ?, ?
+2026-05-08T10:31:59.329+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-2] c.b.subscription.service.UserService     : Searching users with keyword: Magesh
+2026-05-08T10:31:59.337+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    /* SELECT
+        u 
+    FROM
+        User u 
+    WHERE
+        LOWER(u.username) LIKE LOWER(CONCAT('%', :search, '%')) 
+        OR LOWER(u.email) LIKE LOWER(CONCAT('%', :search, '%')) 
+        OR LOWER(u.firstName) LIKE LOWER(CONCAT('%', :search, '%')) 
+        OR LOWER(u.lastName) LIKE LOWER(CONCAT('%', :search, '%')) */ select
+            u1_0.id,
+            u1_0.active,
+            u1_0.created_at,
+            u1_0.created_by,
+            u1_0.description,
+            u1_0.email,
+            u1_0.first_name,
+            u1_0.last_name,
+            u1_0.password,
+            u1_0.phone_number,
+            u1_0.role,
+            u1_0.status,
+            u1_0.updated_at,
+            u1_0.updated_by,
+            u1_0.username 
+        from
+            users u1_0 
+        where
+            lower(u1_0.username) like replace(lower(concat('%', ?, '%')), '\\', '\\\\') 
+            or lower(u1_0.email) like replace(lower(concat('%', ?, '%')), '\\', '\\\\') 
+            or lower(u1_0.first_name) like replace(lower(concat('%', ?, '%')), '\\', '\\\\') 
+            or lower(u1_0.last_name) like replace(lower(concat('%', ?, '%')), '\\', '\\\\') 
+        limit
+            ?, ?
+2026-05-08T10:33:39.984+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] c.b.subscription.service.UserService     : Fetching users by role: ADMIN
+2026-05-08T10:33:39.991+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.description,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.role=? 
+    limit
+        ?, ?
+2026-05-08T10:34:53.959+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] c.b.subscription.service.UserService     : Fetching users by status: ACTIVE
+2026-05-08T10:34:53.963+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.description,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.status=? 
+    limit
+        ?, ?
+2026-05-08T10:37:01.025+05:30  WARN 22052 --- [Subscription Billing System] [http-nio-8080-exec-10] c.b.s.config.GlobalExceptionHandler      : Validation failed
+2026-05-08T10:38:55.653+05:30  WARN 22052 --- [Subscription Billing System] [http-nio-8080-exec-1] c.b.s.config.GlobalExceptionHandler      : Validation failed
+2026-05-08T10:39:05.807+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] c.b.subscription.service.UserService     : Updating user with ID: 1
+2026-05-08T10:39:05.808+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.description,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-05-08T10:39:05.836+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] c.b.subscription.service.UserService     : User updated successfully with ID: 1
+2026-05-08T10:39:05.838+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.AuditLog */insert 
+    into
+        audit_logs (action, created_at, details, entity_id, entity_type, ip_address, new_values, old_values, performed_by) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T10:39:05.847+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] c.b.subscription.service.AuditService    : Audit log created for User ID: 1 - Action: UPDATE
+2026-05-08T10:39:05.905+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* update
+        for com.billing.subscription.entity.User */update users 
+    set
+        active=?,
+        created_by=?,
+        description=?,
+        email=?,
+        first_name=?,
+        last_name=?,
+        password=?,
+        phone_number=?,
+        role=?,
+        status=?,
+        updated_at=?,
+        updated_by=?,
+        username=? 
+    where
+        id=?
+2026-05-08T10:40:22.128+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] c.b.subscription.service.UserService     : Deleting user with ID: 3
+2026-05-08T10:40:22.130+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.description,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-05-08T10:40:22.146+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] c.b.subscription.service.UserService     : User deleted successfully with ID: 3
+2026-05-08T10:40:22.148+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.AuditLog */insert 
+    into
+        audit_logs (action, created_at, details, entity_id, entity_type, ip_address, new_values, old_values, performed_by) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T10:40:22.154+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] c.b.subscription.service.AuditService    : Audit log created for User ID: 3 - Action: DELETE
+2026-05-08T10:40:22.158+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    /* delete for com.billing.subscription.entity.User */delete 
+    from
+        users 
+    where
+        id=?
+2026-05-08T10:41:55.146+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-9] c.b.subscription.service.UserService     : Changing user status to: SUSPENDED for user ID: 3
+2026-05-08T10:41:55.148+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.description,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-05-08T10:41:55.161+05:30  WARN 22052 --- [Subscription Billing System] [http-nio-8080-exec-9] c.b.s.config.GlobalExceptionHandler      : Resource not found: User not found with ID: 3
+2026-05-08T10:42:09.433+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-2] c.b.subscription.service.UserService     : Changing user status to: SUSPENDED for user ID: 2
+2026-05-08T10:42:09.435+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.description,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-05-08T10:42:09.439+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-2] c.b.subscription.service.UserService     : User status changed successfully
+2026-05-08T10:42:09.440+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    /* update
+        for com.billing.subscription.entity.User */update users 
+    set
+        active=?,
+        created_by=?,
+        description=?,
+        email=?,
+        first_name=?,
+        last_name=?,
+        password=?,
+        phone_number=?,
+        role=?,
+        status=?,
+        updated_at=?,
+        updated_by=?,
+        username=? 
+    where
+        id=?
+2026-05-08T10:44:12.777+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] c.b.s.service.SubscriptionPlanService    : Creating new subscription plan: Professional Plan
+2026-05-08T10:44:12.797+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        sp1_0.id 
+    from
+        subscription_plans sp1_0 
+    where
+        sp1_0.name=? 
+    limit
+        ?
+2026-05-08T10:44:12.819+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.SubscriptionPlan */insert 
+    into
+        subscription_plans (created_at, created_by, description, featured, features, max_projects, max_users, monthly_price, name, status, storagegb, updated_at, updated_by, yearly_price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T10:44:12.881+05:30  WARN 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1364, SQLState: HY000
+2026-05-08T10:44:12.881+05:30 ERROR 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] o.h.engine.jdbc.spi.SqlExceptionHelper   : Field 'storage_gb' doesn't have a default value
+2026-05-08T10:44:12.982+05:30 ERROR 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] c.b.s.config.GlobalExceptionHandler      : Unexpected error occurred
+
+org.springframework.orm.jpa.JpaSystemException: could not execute statement [Field 'storage_gb' doesn't have a default value] [/* insert for com.billing.subscription.entity.SubscriptionPlan */insert into subscription_plans (created_at,created_by,description,featured,features,max_projects,max_users,monthly_price,name,status,storagegb,updated_at,updated_by,yearly_price) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:341) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:249) ~[spring-aop-6.1.1.jar:6.1.1]
+	at jdk.proxy2/jdk.proxy2.$Proxy141.save(Unknown Source) ~[na:na]
+	at com.billing.subscription.service.SubscriptionPlanService.createPlan(SubscriptionPlanService.java:49) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.1.jar:6.1.1]
+	at com.billing.subscription.service.SubscriptionPlanService$$SpringCGLIB$$0.createPlan(<generated>) ~[classes/:na]
+	at com.billing.subscription.controller.SubscriptionPlanController.createPlan(SubscriptionPlanController.java:35) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.1.jar:6.1.1]
+	at com.billing.subscription.controller.SubscriptionPlanController$$SpringCGLIB$$0.createPlan(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:254) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: org.hibernate.exception.GenericJDBCException: could not execute statement [Field 'storage_gb' doesn't have a default value] [/* insert for com.billing.subscription.entity.SubscriptionPlan */insert into subscription_plans (created_at,created_by,description,featured,features,max_projects,max_users,monthly_price,name,status,storagegb,updated_at,updated_by,yearly_price) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:283) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performInsert(GetGeneratedKeysDelegate.java:107) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorPostInsertSingleTable.execute(MutationExecutorPostInsertSingleTable.java:100) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:171) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:112) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2860) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:290) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:271) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:321) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:386) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:300) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:219) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:134) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:766) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:750) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at jdk.internal.reflect.GeneratedMethodAccessor47.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:360) ~[spring-orm-6.1.1.jar:6.1.1]
+	at jdk.proxy2/jdk.proxy2.$Proxy132.persist(Unknown Source) ~[na:na]
+	at jdk.internal.reflect.GeneratedMethodAccessor47.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311) ~[spring-orm-6.1.1.jar:6.1.1]
+	at jdk.proxy2/jdk.proxy2.$Proxy132.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:618) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.1.jar:6.1.1]
+	... 128 common frames omitted
+Caused by: java.sql.SQLException: Field 'storage_gb' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:280) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	... 182 common frames omitted
+
+2026-05-08T10:49:18.828+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-6] c.b.s.service.SubscriptionPlanService    : Fetching all plans
+2026-05-08T10:49:18.843+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        sp1_0.id,
+        sp1_0.created_at,
+        sp1_0.created_by,
+        sp1_0.description,
+        sp1_0.featured,
+        sp1_0.features,
+        sp1_0.max_projects,
+        sp1_0.max_users,
+        sp1_0.monthly_price,
+        sp1_0.name,
+        sp1_0.status,
+        sp1_0.storagegb,
+        sp1_0.updated_at,
+        sp1_0.updated_by,
+        sp1_0.yearly_price 
+    from
+        subscription_plans sp1_0 
+    order by
+        sp1_0.id desc 
+    limit
+        ?, ?
+2026-05-08T10:56:52.864+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-9] c.b.s.service.SubscriptionPlanService    : Creating new subscription plan: Premium Plus
+2026-05-08T10:56:52.867+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        sp1_0.id 
+    from
+        subscription_plans sp1_0 
+    where
+        sp1_0.name=? 
+    limit
+        ?
+2026-05-08T10:56:52.873+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.SubscriptionPlan */insert 
+    into
+        subscription_plans (created_at, created_by, description, featured, features, max_projects, max_users, monthly_price, name, status, storagegb, updated_at, updated_by, yearly_price) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T10:56:52.877+05:30  WARN 22052 --- [Subscription Billing System] [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 1364, SQLState: HY000
+2026-05-08T10:56:52.877+05:30 ERROR 22052 --- [Subscription Billing System] [http-nio-8080-exec-9] o.h.engine.jdbc.spi.SqlExceptionHelper   : Field 'storage_gb' doesn't have a default value
+2026-05-08T10:56:52.884+05:30 ERROR 22052 --- [Subscription Billing System] [http-nio-8080-exec-9] c.b.s.config.GlobalExceptionHandler      : Unexpected error occurred
+
+org.springframework.orm.jpa.JpaSystemException: could not execute statement [Field 'storage_gb' doesn't have a default value] [/* insert for com.billing.subscription.entity.SubscriptionPlan */insert into subscription_plans (created_at,created_by,description,featured,features,max_projects,max_users,monthly_price,name,status,storagegb,updated_at,updated_by,yearly_price) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.convertHibernateAccessException(HibernateJpaDialect.java:341) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.vendor.HibernateJpaDialect.translateExceptionIfPossible(HibernateJpaDialect.java:241) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.translateExceptionIfPossible(AbstractEntityManagerFactoryBean.java:550) ~[spring-orm-6.1.1.jar:6.1.1]
+	at org.springframework.dao.support.ChainedPersistenceExceptionTranslator.translateExceptionIfPossible(ChainedPersistenceExceptionTranslator.java:61) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.dao.support.DataAccessUtils.translateIfNecessary(DataAccessUtils.java:335) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:152) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.data.jpa.repository.support.CrudMethodMetadataPostProcessor$CrudMethodMetadataPopulatingMethodInterceptor.invoke(CrudMethodMetadataPostProcessor.java:164) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.interceptor.ExposeInvocationInterceptor.invoke(ExposeInvocationInterceptor.java:97) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:249) ~[spring-aop-6.1.1.jar:6.1.1]
+	at jdk.proxy2/jdk.proxy2.$Proxy141.save(Unknown Source) ~[na:na]
+	at com.billing.subscription.service.SubscriptionPlanService.createPlan(SubscriptionPlanService.java:49) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.1.jar:6.1.1]
+	at com.billing.subscription.service.SubscriptionPlanService$$SpringCGLIB$$0.createPlan(<generated>) ~[classes/:na]
+	at com.billing.subscription.controller.SubscriptionPlanController.createPlan(SubscriptionPlanController.java:35) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.validation.beanvalidation.MethodValidationInterceptor.invoke(MethodValidationInterceptor.java:174) ~[spring-context-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:765) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:717) ~[spring-aop-6.1.1.jar:6.1.1]
+	at com.billing.subscription.controller.SubscriptionPlanController$$SpringCGLIB$$0.createPlan(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:254) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:182) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:917) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:829) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885) ~[spring-webmvc-6.1.1.jar:6.1.1]
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658) ~[tomcat-embed-core-10.1.16.jar:6.0]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51) ~[tomcat-embed-websocket-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:213) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.2.0.jar:6.2.0]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.1.1.jar:6.1.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:340) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:896) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1744) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.16.jar:10.1.16]
+	at java.base/java.lang.Thread.run(Thread.java:842) ~[na:na]
+Caused by: org.hibernate.exception.GenericJDBCException: could not execute statement [Field 'storage_gb' doesn't have a default value] [/* insert for com.billing.subscription.entity.SubscriptionPlan */insert into subscription_plans (created_at,created_by,description,featured,features,max_projects,max_users,monthly_price,name,status,storagegb,updated_at,updated_by,yearly_price) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?)]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:283) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.id.insert.GetGeneratedKeysDelegate.performInsert(GetGeneratedKeysDelegate.java:107) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.engine.jdbc.mutation.internal.MutationExecutorPostInsertSingleTable.execute(MutationExecutorPostInsertSingleTable.java:100) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.doStaticInserts(InsertCoordinator.java:171) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.persister.entity.mutation.InsertCoordinator.coordinateInsert(InsertCoordinator.java:112) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.persister.entity.AbstractEntityPersister.insert(AbstractEntityPersister.java:2860) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.action.internal.EntityIdentityInsertAction.execute(EntityIdentityInsertAction.java:81) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.execute(ActionQueue.java:667) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addResolvedEntityInsertAction(ActionQueue.java:290) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addInsertAction(ActionQueue.java:271) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.engine.spi.ActionQueue.addAction(ActionQueue.java:321) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.addInsertAction(AbstractSaveEventListener.java:386) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSaveOrReplicate(AbstractSaveEventListener.java:300) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.performSave(AbstractSaveEventListener.java:219) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.AbstractSaveEventListener.saveWithGeneratedId(AbstractSaveEventListener.java:134) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.entityIsTransient(DefaultPersistEventListener.java:175) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.persist(DefaultPersistEventListener.java:93) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:77) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.internal.DefaultPersistEventListener.onPersist(DefaultPersistEventListener.java:54) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.event.service.internal.EventListenerGroupImpl.fireEventOnEachListener(EventListenerGroupImpl.java:127) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionImpl.firePersist(SessionImpl.java:766) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at org.hibernate.internal.SessionImpl.persist(SessionImpl.java:750) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	at jdk.internal.reflect.GeneratedMethodAccessor47.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:360) ~[spring-orm-6.1.1.jar:6.1.1]
+	at jdk.proxy2/jdk.proxy2.$Proxy132.persist(Unknown Source) ~[na:na]
+	at jdk.internal.reflect.GeneratedMethodAccessor47.invoke(Unknown Source) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.orm.jpa.SharedEntityManagerCreator$SharedEntityManagerInvocationHandler.invoke(SharedEntityManagerCreator.java:311) ~[spring-orm-6.1.1.jar:6.1.1]
+	at jdk.proxy2/jdk.proxy2.$Proxy132.persist(Unknown Source) ~[na:na]
+	at org.springframework.data.jpa.repository.support.SimpleJpaRepository.save(SimpleJpaRepository.java:618) ~[spring-data-jpa-3.2.0.jar:3.2.0]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:352) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker$RepositoryFragmentMethodInvoker.lambda$new$0(RepositoryMethodInvoker.java:277) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.doInvoke(RepositoryMethodInvoker.java:170) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryMethodInvoker.invoke(RepositoryMethodInvoker.java:158) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition$RepositoryFragments.invoke(RepositoryComposition.java:516) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryComposition.invoke(RepositoryComposition.java:285) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport$ImplementationMethodExecutionInterceptor.invoke(RepositoryFactorySupport.java:628) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.doInvoke(QueryExecutorMethodInterceptor.java:168) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.invoke(QueryExecutorMethodInterceptor.java:143) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.data.projection.DefaultMethodInvokingMethodInterceptor.invoke(DefaultMethodInvokingMethodInterceptor.java:70) ~[spring-data-commons-3.2.0.jar:3.2.0]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:385) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119) ~[spring-tx-6.1.1.jar:6.1.1]
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184) ~[spring-aop-6.1.1.jar:6.1.1]
+	at org.springframework.dao.support.PersistenceExceptionTranslationInterceptor.invoke(PersistenceExceptionTranslationInterceptor.java:137) ~[spring-tx-6.1.1.jar:6.1.1]
+	... 128 common frames omitted
+Caused by: java.sql.SQLException: Field 'storage_gb' doesn't have a default value
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:130) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:912) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1054) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdateInternal(ClientPreparedStatement.java:1003) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeLargeUpdate(ClientPreparedStatement.java:1312) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeUpdate(ClientPreparedStatement.java:988) ~[mysql-connector-j-8.2.0.jar:8.2.0]
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61) ~[HikariCP-5.0.1.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java) ~[HikariCP-5.0.1.jar:na]
+	at org.hibernate.engine.jdbc.internal.ResultSetReturnImpl.executeUpdate(ResultSetReturnImpl.java:280) ~[hibernate-core-6.3.1.Final.jar:6.3.1.Final]
+	... 182 common frames omitted
+
+2026-05-08T10:57:57.639+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-1] c.b.s.service.SubscriptionPlanService    : Fetching active plans
+2026-05-08T10:57:57.644+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        sp1_0.id,
+        sp1_0.created_at,
+        sp1_0.created_by,
+        sp1_0.description,
+        sp1_0.featured,
+        sp1_0.features,
+        sp1_0.max_projects,
+        sp1_0.max_users,
+        sp1_0.monthly_price,
+        sp1_0.name,
+        sp1_0.status,
+        sp1_0.storagegb,
+        sp1_0.updated_at,
+        sp1_0.updated_by,
+        sp1_0.yearly_price 
+    from
+        subscription_plans sp1_0 
+    where
+        sp1_0.status=? 
+    limit
+        ?, ?
+2026-05-08T10:59:24.560+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] c.b.s.service.SubscriptionPlanService    : Fetching featured plans
+2026-05-08T10:59:24.569+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    /* <criteria> */ select
+        sp1_0.id,
+        sp1_0.created_at,
+        sp1_0.created_by,
+        sp1_0.description,
+        sp1_0.featured,
+        sp1_0.features,
+        sp1_0.max_projects,
+        sp1_0.max_users,
+        sp1_0.monthly_price,
+        sp1_0.name,
+        sp1_0.status,
+        sp1_0.storagegb,
+        sp1_0.updated_at,
+        sp1_0.updated_by,
+        sp1_0.yearly_price 
+    from
+        subscription_plans sp1_0 
+    where
+        sp1_0.featured=? 
+    limit
+        ?, ?
+2026-05-08T11:01:17.184+05:30  WARN 22052 --- [Subscription Billing System] [http-nio-8080-exec-7] c.b.s.config.GlobalExceptionHandler      : Validation failed
+2026-05-08T11:03:27.465+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-9] c.b.subscription.service.InvoiceService  : Creating new invoice for subscription ID: 1
+2026-05-08T11:03:27.476+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.auto_renew,
+        s1_0.billing_cycle,
+        s1_0.created_at,
+        s1_0.created_by,
+        s1_0.current_price,
+        s1_0.end_date,
+        s1_0.next_billing_date,
+        s1_0.notes,
+        s1_0.plan_id,
+        s1_0.start_date,
+        s1_0.status,
+        s1_0.subscription_number,
+        s1_0.updated_at,
+        s1_0.updated_by,
+        s1_0.user_id 
+    from
+        subscriptions s1_0 
+    where
+        s1_0.id=?
+2026-05-08T11:03:27.489+05:30  WARN 22052 --- [Subscription Billing System] [http-nio-8080-exec-9] c.b.s.config.GlobalExceptionHandler      : Resource not found: Subscription not found with ID: 1
+2026-05-08T11:04:47.319+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-3] c.b.s.service.SubscriptionService        : Creating new subscription for user ID: 1
+2026-05-08T11:04:47.323+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.description,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-05-08T11:04:47.335+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        sp1_0.id,
+        sp1_0.created_at,
+        sp1_0.created_by,
+        sp1_0.description,
+        sp1_0.featured,
+        sp1_0.features,
+        sp1_0.max_projects,
+        sp1_0.max_users,
+        sp1_0.monthly_price,
+        sp1_0.name,
+        sp1_0.status,
+        sp1_0.storagegb,
+        sp1_0.updated_at,
+        sp1_0.updated_by,
+        sp1_0.yearly_price 
+    from
+        subscription_plans sp1_0 
+    where
+        sp1_0.id=?
+2026-05-08T11:04:47.367+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.Subscription */insert 
+    into
+        subscriptions (auto_renew, billing_cycle, created_at, created_by, current_price, end_date, next_billing_date, notes, plan_id, start_date, status, subscription_number, updated_at, updated_by, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T11:04:47.389+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-3] c.b.s.service.SubscriptionService        : Subscription created successfully with ID: 1
+2026-05-08T11:04:47.390+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.AuditLog */insert 
+    into
+        audit_logs (action, created_at, details, entity_id, entity_type, ip_address, new_values, old_values, performed_by) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T11:04:47.399+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-3] c.b.subscription.service.AuditService    : Audit log created for Subscription ID: 1 - Action: CREATE
+2026-05-08T11:05:35.197+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-5] c.b.s.service.SubscriptionService        : Creating new subscription for user ID: 2
+2026-05-08T11:05:35.199+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.description,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-05-08T11:05:35.202+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        sp1_0.id,
+        sp1_0.created_at,
+        sp1_0.created_by,
+        sp1_0.description,
+        sp1_0.featured,
+        sp1_0.features,
+        sp1_0.max_projects,
+        sp1_0.max_users,
+        sp1_0.monthly_price,
+        sp1_0.name,
+        sp1_0.status,
+        sp1_0.storagegb,
+        sp1_0.updated_at,
+        sp1_0.updated_by,
+        sp1_0.yearly_price 
+    from
+        subscription_plans sp1_0 
+    where
+        sp1_0.id=?
+2026-05-08T11:05:35.208+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.Subscription */insert 
+    into
+        subscriptions (auto_renew, billing_cycle, created_at, created_by, current_price, end_date, next_billing_date, notes, plan_id, start_date, status, subscription_number, updated_at, updated_by, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T11:05:35.217+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-5] c.b.s.service.SubscriptionService        : Subscription created successfully with ID: 2
+2026-05-08T11:05:35.218+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.AuditLog */insert 
+    into
+        audit_logs (action, created_at, details, entity_id, entity_type, ip_address, new_values, old_values, performed_by) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T11:05:35.222+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-5] c.b.subscription.service.AuditService    : Audit log created for Subscription ID: 2 - Action: CREATE
+2026-05-08T11:07:12.102+05:30  WARN 22052 --- [Subscription Billing System] [http-nio-8080-exec-6] c.b.s.config.GlobalExceptionHandler      : Validation failed
+2026-05-08T11:07:43.529+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-10] c.b.subscription.service.InvoiceService  : Creating new invoice for subscription ID: 1
+2026-05-08T11:07:43.534+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        s1_0.id,
+        s1_0.auto_renew,
+        s1_0.billing_cycle,
+        s1_0.created_at,
+        s1_0.created_by,
+        s1_0.current_price,
+        s1_0.end_date,
+        s1_0.next_billing_date,
+        s1_0.notes,
+        s1_0.plan_id,
+        s1_0.start_date,
+        s1_0.status,
+        s1_0.subscription_number,
+        s1_0.updated_at,
+        s1_0.updated_by,
+        s1_0.user_id 
+    from
+        subscriptions s1_0 
+    where
+        s1_0.id=?
+2026-05-08T11:07:43.565+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.active,
+        u1_0.created_at,
+        u1_0.created_by,
+        u1_0.description,
+        u1_0.email,
+        u1_0.first_name,
+        u1_0.last_name,
+        u1_0.password,
+        u1_0.phone_number,
+        u1_0.role,
+        u1_0.status,
+        u1_0.updated_at,
+        u1_0.updated_by,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.id=?
+2026-05-08T11:07:43.591+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.Invoice */insert 
+    into
+        invoices (amount, created_at, created_by, description, due_date, invoice_date, invoice_number, notes, paid_date, status, subscription_id, tax, total_amount, updated_at, updated_by, user_id) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T11:07:43.603+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-10] c.b.subscription.service.InvoiceService  : Invoice created successfully with ID: 1
+2026-05-08T11:07:43.605+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    /* insert for
+        com.billing.subscription.entity.AuditLog */insert 
+    into
+        audit_logs (action, created_at, details, entity_id, entity_type, ip_address, new_values, old_values, performed_by) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2026-05-08T11:07:43.611+05:30 DEBUG 22052 --- [Subscription Billing System] [http-nio-8080-exec-10] c.b.subscription.service.AuditService    : Audit log created for Invoice ID: 1 - Action: CREATE
+2026-05-08T11:09:08.565+05:30  INFO 22052 --- [Subscription Billing System] [http-nio-8080-exec-10] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 2950 ms
